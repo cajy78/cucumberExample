@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -24,6 +25,8 @@ public class simpliLearnCucumber
 
     @Given("^The user is already on the Amazon Home Page$")
     public void the_user_is_already_on_the_amazon_home_page() throws Throwable {
+    	//System.setProperty("webdriver.chrome.driver", "./drivers/windows/chromedriver.exe");
+    	//driver = new ChromeDriver();
     	driver.get("https://www.amazon.in");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);

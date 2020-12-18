@@ -1,7 +1,7 @@
 package stepdef;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -13,8 +13,8 @@ public class CucumberSetup
 	@Before("@Amazon")
 	public void startChrome()
 	{
-		System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver");
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "./drivers/windows/chromedriver.exe");
+		driver = new ChromeDriver();
 	}
 	
 	@After("@Amazon")
