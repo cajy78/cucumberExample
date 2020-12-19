@@ -13,10 +13,9 @@ public class CucumberSetup
 	@Before("@Amazon")
 	public void startChrome()
 	{
-		System.setProperty("webdriver.chrome.driver", "./drivers/windows/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./drivers/linux/chromedriver");
 		driver = new ChromeDriver();
 	}
-	
 	@After("@Amazon")
 	public void endChrome()
 	{

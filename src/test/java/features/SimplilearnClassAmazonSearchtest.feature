@@ -13,7 +13,7 @@ Feature: Search Functionality in Amazon website
       | Laptop      | Dell            |
       | Mobile      | Samsung         |
 
-  @Pragmatic
+  @Regression
   Scenario Outline: Provide the search function to the user to have quick acces to the required product
     Given The user is already on the Amazon Home Page
     When User click on search bar and type "<ProductName>"
